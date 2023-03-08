@@ -4,6 +4,7 @@
   
   /* Style the body */
   body {
+
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
@@ -34,29 +35,24 @@
     text-align: center;
     font-weight: bold;
     text-decoration: none;
+  }    
 
-}
+
   /* Header/logo Title */
   .header {
-  padding:230px;
+  
+  padding: 300px;
   background-image: url(/img/Headerimage.jpg);
-  min-height: 100%;
-  text-align: center;
-  color: rgb(91, 154, 173);
+  background-size: cover;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  }
+  text-align: center;
+  color: rgb(91, 154, 173);
 
-  .header-display-container
-  {
-    position: relative;
-  }
-  .headeropacity-min
-  {
-    position: 0.75;
-  }
+}
+
   /* Increase the font size of the heading */
   .header h1 {
     font-size: 45px; /* font size van uw hoofdtitel*/
@@ -130,14 +126,15 @@
 
   li {
     display: list-item;
-    text-align: -webkit-match-parent;
+    text-align: match-parent;
 }
   /* Main column */
   .main {   
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
-    background-color: rgb(209, 216, 216);
-    padding: 20px;
+    background-color: rgb(232, 236, 236);
+    padding: 30px;
+    padding-left: 100px;
   }
   
   /* Fake image, just for this example */
@@ -162,13 +159,63 @@
     height: 30px;
     object-fit: cover;
     object-position: center center;
+    border-radius: 5px;
+  }
+  .schoolicons {
+    background-color: transparent; /*verander naar transparant achteraf*/
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    object-position: center center;
   }
   
   /* Footer */
   .footer {
-    padding: 20px;
+    padding: 100px;
+    background-image: url(/img/Headerimage.jpg);
+    background-size: cover;
     text-align: center;
-    background: #ddd;
+
+  }
+  .pfooter {
+    text-align: center;
+    opacity: 0.60;
+
+  }
+  .ppfooter {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding-left: 500px;
+
+  }
+  
+  .form {
+    width: 50%;
+    float: right;
+  }
+  .formrow1 {
+    padding: 0 8px;
+  }
+  
+  .half {
+    width:50%;
+    float: left;
+  }
+  .inputborder {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    border: 2px solid #ccc!important;
+  }
+  .inputborder2 {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border: 2px solid #ccc!important;
   }
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
