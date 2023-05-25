@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 200px;
+    text-align: left;
+    background-image: url(/img/Headerimage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;  
+    background-size: cover;
+    background-position: 35%;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    height: 10vh;
+    font-size: 70px;
+
+}
+
+/* Style the top navigation bar */
+.navbara {
+  overflow: visible;
+  background-color:transparent;
+  position:sticky ; /* Set the navbar to fixed position */
+  width: 100%;
+  font-size: 20px;
+  font-family: Arial;
+
+}
+
+div>span{
+  float:left;
+}
+
+.homebutton{
+  padding-left: 20px;
+  height: 80px;
+  float: left;
+}
+
+/* Style the navigation bar links */
+.navbara a {
+  float: right;
+  display: block;
+  color: rgb(28, 27, 27);
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+
+}
+
+/* Right-aligned link */
+.navbara a.right {
+  float: right;
+}
+
+
+
+/* Change color on hover */
+.navbara a:hover {
+  background-color: rgb(252, 138, 138);;
+  color: black;
+}
+
+/* Change color on active */
+.navbara a:active {
+  background-color: rgb(182, 47, 47);
+  color: black;
+}
+
+
+/* Column container */
+.row{  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.row h2{
+  padding:40px;
+  
+}
+
+/* Create two equal and one unequal column that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #ffffff;
+  padding: 40px;
+}
+.side h2{
+  font-size: 60px;
+  color: rgb(31, 30, 30);
+  height: 4vh;
+}
+.side h4{
+  font-size: 25px;
+  color: rgb(31, 30, 30);
+  height: 4vh;
+}
+.side a{
+  color: rgb(252, 138, 138);
+}
+.skillside{
+  width: 100%;
+  padding-top: 100px;
+
+
+}
+/* Main column */
+.main {   
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;  
+  padding-top: 30vh;
+  background-image: url(/img/ZP.png);
+  background-origin:content-box; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35%;
+
+}
+
+.rightside{
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: white;
+  padding: 10px;
+
+}
+.rightside h2{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 25px;
+  color: rgb(31, 30, 30);
+
+}
+.rightside h3{
+
+  height: 1vh;
+  font-size: 20px;
+  color: rgb(31, 30, 30);
+}
+.rightside h4{
+
+  font-size: 17px;
+  color:  rgb(252, 138, 138);
+}
+/* Fake image, just for this example */
+.skillrange {
+  background-color: rgb(252, 138, 138);
+  padding: 7px;
+  border-radius: 15px;
+  color:  white;
+}
+
+.projects{
+  background-color: #ddd;
+  width: 100%;
+  border-radius: 15px;
+}
+.contentprojects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.oneproject {
+  width: 35vw;
+}
+.projects img {
+  width: 35vw;
+  border-radius: 15px;
+}
+.projects h2 {
+font-size: 30px;
+height: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.line-under{
+  padding:15px;
+  border-bottom: 1px solid black;
+  width: 60%;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+form label {
+  display: block;
+  margin-top: 10px;
+}
+form button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button:hover {
+  background-color: #45a049;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
